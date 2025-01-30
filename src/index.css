@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* index.css */
+
+/* Styling for the card */
+.card {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Styling for the image inside the card */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Styling the container to display cards in a single row */
+.container {
+  display: flex;
+  flex-direction: row; /* Ensure items are in a row */
+  justify-content: flex-start; /* Align the items to the left */
+  overflow-x: auto; /* Allow horizontal scrolling if items overflow */
+  padding: 20px;
+  gap: 20px; /* Space between cards */
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #333;
 }

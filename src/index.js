@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App"; // Import the App component that holds the routes and layout
+import "./index.css"; // Optional for global styles
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<React.StrictMode><App /></React.StrictMode>);
-
-// If you want to start measuring performance in your app
-reportWebVitals(console.log);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    
+      <App /> {/* App component will handle the routing */}
+    
+  </React.StrictMode>
+);
